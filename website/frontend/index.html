@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <!-- Mobile Metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <!-- Site Metas -->
+      <meta name="keywords" content="" />
+      <meta name="description" content="" />
+      <meta name="author" content="" />
+      <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+      <title>EndoDetect-Model</title>
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+      <!-- Boxicons CDN -->
+<link href="https://unicons.iconscout.com/release/v4.0.0/css/boxicons.min.css" rel="stylesheet">
+
+      <!-- font awesome style -->
+      <link href="css/font-awesome.min.css" rel="stylesheet" />
+      <!-- Custom styles for this template -->
+      <link href="css/style.css" rel="stylesheet" />
+      <!-- responsive style -->
+      <link href="css/responsive.css" rel="stylesheet" />
+      <link rel="stylesheet" href="css/index.css">
+   </head>
+<body>
+
+    <div class="hero_area">
+        <!-- header section strats -->
+        <header class="full-width-header">
+            <div class="inner-header">
+               <nav class="navbar navbar-expand-lg custom_nav-container">
+                  <a class="navbar-brand" href="home.html"><img width="250" src="images/logo.png" alt="#" /></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class=""> </span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <ul class="navbar-nav">
+                        <li class="nav-item active">
+                           <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="testimonial.html">Creator</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="index.html">Model</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                     </ul>
+                  </div>
+               </nav>
+            </div>
+         </header>
+         
+
+         <section class="inner_page_head">
+            <div class="container_fuild">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="full">
+                    <h3>Select your Symptoms</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+    <div class="container">
+        <div class="form-container">
+            <h2>Select Your Symptoms</h2>
+            <form id="symptoms-form" class="symptoms-grid">
+                <div class="symptom-item">
+                    <label class="symptom-label">Irregular / Missed periods</label>
+                    <div class="symptom-options">
+                        <div>
+                            <input type="radio" id="irregular_missed_periods_yes" name="irregular_missed_periods" value="1">
+                            <label for="irregular_missed_periods_yes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="irregular_missed_periods_no" name="irregular_missed_periods" value="0" checked>
+                            <label for="irregular_missed_periods_no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="symptom-item">
+                    <label class="symptom-label">Cramping</label>
+                    <div class="symptom-options">
+                        <div>
+                            <input type="radio" id="cramping_yes" name="cramping" value="1">
+                            <label for="cramping_yes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="cramping_no" name="cramping" value="0" checked>
+                            <label for="cramping_no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="symptom-item">
+                    <label class="symptom-label">Menstrual clots</label>
+                    <div class="symptom-options">
+                        <div>
+                            <input type="radio" id="menstrual_clots_yes" name="menstrual_clots" value="1">
+                            <label for="menstrual_clots_yes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="menstrual_clots_no" name="menstrual_clots" value="0" checked>
+                            <label for="menstrual_clots_no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="symptom-item">
+                    <label class="symptom-label">Infertility</label>
+                    <div class="symptom-options">
+                        <div>
+                            <input type="radio" id="infertility_yes" name="infertility" value="1">
+                            <label for="infertility_yes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="infertility_no" name="infertility" value="0" checked>
+                            <label for="infertility_no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="symptom-item">
+                    <label class="symptom-label">Pain / Chronic pain</label>
+                    <div class="symptom-options">
+                        <div>
+                            <input type="radio" id="pain_chronic_pain_yes" name="pain_chronic_pain" value="1">
+                            <label for="pain_chronic_pain_yes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="pain_chronic_pain_no" name="pain_chronic_pain" value="0" checked>
+                            <label for="pain_chronic_pain_no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="symptom-item">
+                    <label class="symptom-label">Diarrhea</label>
+                    <div class="symptom-options">
+                        <div>
+                            <input type="radio" id="diarrhea_yes" name="diarrhea" value="1">
+                            <label for="diarrhea_yes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="diarrhea_no" name="diarrhea" value="0" checked>
+                            <label for="diarrhea_no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="symptom-item">
+                    <label class="symptom-label">Long menstruation</label>
+                    <div class="symptom-options">
+                        <div>
+                            <input type="radio" id="long_menstruation_yes" name="long_menstruation" value="1">
+                            <label for="long_menstruation_yes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="long_menstruation_no" name="long_menstruation" value="0" checked>
+                            <label for="long_menstruation_no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="symptom-item">
+                    <label class="symptom-label">Vomiting / constant vomiting</label>
+                    <div class="symptom-options">
+                        <div>
+                            <input type="radio" id="vomiting_constant_vomiting_yes" name="vomiting_constant_vomiting" value="1">
+                            <label for="vomiting_constant_vomiting_yes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="vomiting_constant_vomiting_no" name="vomiting_constant_vomiting" value="0" checked>
+                            <label for="vomiting_constant_vomiting_no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="symptom-item">
+                    <label class="symptom-label">Migraines</label>
+                    <div class="symptom-options">
+                        <div>
+                            <input type="radio" id="migraines_yes" name="migraines" value="1">
+                            <label for="migraines_yes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="migraines_no" name="migraines" value="0" checked>
+                            <label for="migraines_no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="symptom-item">
+                    <label class="symptom-label">Extreme Bloating</label>
+                    <div class="symptom-options">
+                        <div>
+                            <input type="radio" id="extreme_bloating_yes" name="extreme_bloating" value="1">
+                            <label for="extreme_bloating_yes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="extreme_bloating_no" name="extreme_bloating" value="0" checked>
+                            <label for="extreme_bloating_no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="symptom-item">
+                    <label class="symptom-label">Leg pain</label>
+                    <div class="symptom-options">
+                        <div>
+                            <input type="radio" id="leg_pain_yes" name="leg_pain" value="1">
+                            <label for="leg_pain_yes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="leg_pain_no" name="leg_pain" value="0" checked>
+                            <label for="leg_pain_no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="symptom-item">
+                    <label class="symptom-label">Depression</label>
+                    <div class="symptom-options">
+                        <div>
+                            <input type="radio" id="depression_yes" name="depression" value="1">
+                            <label for="depression_yes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="depression_no" name="depression" value="0" checked>
+                            <label for="depression_no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="symptom-item">
+                    <label class="symptom-label">Fertility Issues</label>
+                    <div class="symptom-options">
+                        <div>
+                            <input type="radio" id="fertility_issues_yes" name="fertility_issues" value="1">
+                            <label for="fertility_issues_yes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="fertility_issues_no" name="fertility_issues" value="0" checked>
+                            <label for="fertility_issues_no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="symptom-item">
+                    <label class="symptom-label">Ovarian cysts</label>
+                    <div class="symptom-options">
+                        <div>
+                            <input type="radio" id="ovarian_cysts_yes" name="ovarian_cysts" value="1">
+                            <label for="ovarian_cysts_yes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="ovarian_cysts_no" name="ovarian_cysts" value="0" checked>
+                            <label for="ovarian_cysts_no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="symptom-item">
+                    <label class="symptom-label">Painful urination</label>
+                    <div class="symptom-options">
+                        <div>
+                            <input type="radio" id="painful_urination_yes" name="painful_urination" value="1">
+                            <label for="painful_urination_yes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="painful_urination_no" name="painful_urination" value="0" checked>
+                            <label for="painful_urination_no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="symptom-item">
+                    <label class="symptom-label">Pain after Intercourse</label>
+                    <div class="symptom-options">
+                        <div>
+                            <input type="radio" id="pain_after_intercourse_yes" name="pain_after_intercourse" value="1">
+                            <label for="pain_after_intercourse_yes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="pain_after_intercourse_no" name="pain_after_intercourse" value="0" checked>
+                            <label for="pain_after_intercourse_no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="symptom-item">
+                    <label class="symptom-label">Digestive / GI problems</label>
+                    <div class="symptom-options">
+                        <div>
+                            <input type="radio" id="digestive_gi_problems_yes" name="digestive_gi_problems" value="1">
+                            <label for="digestive_gi_problems_yes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="digestive_gi_problems_no" name="digestive_gi_problems" value="0" checked>
+                            <label for="digestive_gi_problems_no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="symptom-item">
+                    <label class="symptom-label">Anaemia / Iron deficiency</label>
+                    <div class="symptom-options">
+                        <div>
+                            <input type="radio" id="anaemia_iron_deficiency_yes" name="anaemia_iron_deficiency" value="1">
+                            <label for="anaemia_iron_deficiency_yes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="anaemia_iron_deficiency_no" name="anaemia_iron_deficiency" value="0" checked>
+                            <label for="anaemia_iron_deficiency_no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="symptom-item">
+                    <label class="symptom-label">Hip pain</label>
+                    <div class="symptom-options">
+                        <div>
+                            <input type="radio" id="hip_pain_yes" name="hip_pain" value="1">
+                            <label for="hip_pain_yes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="hip_pain_no" name="hip_pain" value="0" checked>
+                            <label for="hip_pain_no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="symptom-item">
+                    <label class="symptom-label">Vaginal Pain/Pressure</label>
+                    <div class="symptom-options">
+                        <div>
+                            <input type="radio" id="vaginal_pain_pressure_yes" name="vaginal_pain_pressure" value="1">
+                            <label for="vaginal_pain_pressure_yes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="vaginal_pain_pressure_no" name="vaginal_pain_pressure" value="0" checked>
+                            <label for="vaginal_pain_pressure_no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="symptom-item">
+                    <label class="symptom-label">Cysts (unspecified)</label>
+                    <div class="symptom-options">
+                        <div>
+                            <input type="radio" id="cysts_unspecified_yes" name="cysts_unspecified" value="1">
+                            <label for="cysts_unspecified_yes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="cysts_unspecified_no" name="cysts_unspecified" value="0" checked>
+                            <label for="cysts_unspecified_no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="symptom-item">
+                    <label class="symptom-label">Abnormal uterine bleeding</label>
+                    <div class="symptom-options">
+                        <div>
+                            <input type="radio" id="abnormal_uterine_bleeding_yes" name="abnormal_uterine_bleeding" value="1">
+                            <label for="abnormal_uterine_bleeding_yes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="abnormal_uterine_bleeding_no" name="abnormal_uterine_bleeding" value="0" checked>
+                            <label for="abnormal_uterine_bleeding_no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="symptom-item">
+                    <label class="symptom-label">Hormonal problems</label>
+                    <div class="symptom-options">
+                        <div>
+                            <input type="radio" id="hormonal_problems_yes" name="hormonal_problems" value="1">
+                            <label for="hormonal_problems_yes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="hormonal_problems_no" name="hormonal_problems" value="0" checked>
+                            <label for="hormonal_problems_no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="symptom-item">
+                    <label class="symptom-label">Feeling sick</label>
+                    <div class="symptom-options">
+                        <div>
+                            <input type="radio" id="feeling_sick_yes" name="feeling_sick" value="1">
+                            <label for="feeling_sick_yes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="feeling_sick_no" name="feeling_sick" value="0" checked>
+                            <label for="feeling_sick_no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="symptom-item">
+                    <label class="symptom-label">Abdominal Cramps during Intercourse</label>
+                    <div class="symptom-options">
+                        <div>
+                            <input type="radio" id="abdominal_cramps_during_intercourse_yes" name="abdominal_cramps_during_intercourse" value="1">
+                            <label for="abdominal_cramps_during_intercourse_yes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="abdominal_cramps_during_intercourse_no" name="abdominal_cramps_during_intercourse" value="0" checked>
+                            <label for="abdominal_cramps_during_intercourse_no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="symptom-item">
+                    <label class="symptom-label">Insomnia / Sleeplessness</label>
+                    <div class="symptom-options">
+                        <div>
+                            <input type="radio" id="insomnia_sleeplessness_yes" name="insomnia_sleeplessness" value="1">
+                            <label for="insomnia_sleeplessness_yes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="insomnia_sleeplessness_no" name="insomnia_sleeplessness" value="0" checked>
+                            <label for="insomnia_sleeplessness_no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="symptom-item">
+                    <label class="symptom-label">Loss of appetite</label>
+                    <div class="symptom-options">
+                        <div>
+                            <input type="radio" id="loss_of_appetite_yes" name="loss_of_appetite" value="1">
+                            <label for="loss_of_appetite_yes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="loss_of_appetite_no" name="loss_of_appetite" value="0" checked>
+                            <label for="loss_of_appetite_no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+            <button id="submit-btn" class="submit-btn">Check Diagnosis</button>
+        </div>
+        <div id="result-container" class="result-container hidden">
+            <h2>Diagnosis Result</h2>
+            <div id="result-content"></div>
+        </div>
+    </div>
+    <script src="javascript/index.js"></script>
+
+
+
+    
+      <!-- footer start -->
+      <footer>
+        <div class="container">
+           <div class="row">
+              <div class="col-md-4">
+                  <div class="full">
+                     <div class="logo_footer">
+                       <a href="#"><img width="210" src="images/logo.png" alt="#" /></a>
+                     </div>
+                     <div class="information_f">
+                       <p><strong>ADDRESS:</strong> Invertis Univeristy, Bareilly</p>
+                       <p><strong>TELEPHONE:</strong> +91 7906823772</p>
+                       <p><strong>EMAIL:</strong> pawni11dixit@gmail.com</p>
+                     </div>
+                  </div>
+              </div>
+              <div class="col-md-8">
+                 <div class="row">
+                 <div class="col-md-7">
+                    <div class="row">
+                       <div class="col-md-6">
+                    <div class="widget_menu">
+                       <h3>Menu</h3>
+                       <ul>
+                          <li><a href="#">Home</a></li>
+                          <li><a href="testimonial.html">Team</a></li>
+                          <li><a href="index.html">Model</a></li>
+                          <li><a href="contact.html">Contact Us</a></li>
+                       </ul>
+                    </div>
+                 </div>
+   
+                 </div>
+              </div>
+           </div>
+        </div>
+     </footer>
+     <!-- footer end -->
+     <div class="cpy_">
+        <p class="mx-auto">© 2025 All Rights Reserved By Team AI<br>
+        
+           Under Invertis University
+        
+        </p>
+     </div>
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Your custom slider script -->
+<script src="javascript/slider.js"></script>
+
+</body>
+</html>

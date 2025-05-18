@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <title>EndoDetect - Contact Us</title>
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/png" />
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+    <!-- Font awesome style -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Custom styles -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+  </head>
+
+  <body class="sub_page">
+    <div class="hero_area">
+      <!-- Header section -->
+      <header class="header_section">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="home.html"><img width="250" src="images/logo.png" alt="#" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+              <span class=""> </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="testimonial.html">Team</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Model</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+    </div>
+
+    <!-- Page title -->
+    <section class="inner_page_head">
+      <div class="container_fuild">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="full">
+              <h3>Contact us</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact form section -->
+    <section class="why_section layout_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2">
+            <div class="full">
+              <form id="contactForm">
+                <fieldset>
+                  <input type="text" placeholder="Enter your full name" name="name" required />
+                  <input type="email" placeholder="Enter your email address" name="email" required />
+                  <input type="text" placeholder="Enter your concern" name="subject" required />
+                  <textarea placeholder="Describe it" name="message" required></textarea>
+                  <input type="submit" value="Submit" />
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal for success message -->
+    <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="successModalLabel">Success</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">Data submitted successfully!</div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="full">
+              <div class="logo_footer">
+                <a href="#"><img width="210" src="images/logo.png" alt="#" /></a>
+              </div>
+              <div class="information_f">
+                <p><strong>ADDRESS:</strong> Invertis University, Bareilly</p>
+                <p><strong>TELEPHONE:</strong> +91 7906823772</p>
+                <p><strong>EMAIL:</strong> pawni11dixit@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="widget_menu">
+                  <h3>Menu</h3>
+                  <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="testimonial.html">Team</a></li>
+                    <li><a href="index.html">Model</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+    <div class="cpy_">
+      <p class="mx-auto">© 2025 All Rights Reserved By Team AI<br />Under Invertis University</p>
+    </div>
+
+    <!-- JS scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      document.getElementById("contactForm").addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent actual form submission
+        $('#successModal').modal('show'); // Show success popup
+        this.reset(); // Clear the form
+      });
+    </script>
+  </body>
+</html>

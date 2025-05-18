@@ -1,0 +1,30 @@
+# services:
+#   - type: web
+#     name: endodetect-backend
+#     env: python
+#     buildCommand: pip install -r requirements.txt
+#     startCommand: gunicorn website.backend.app:app
+#     port: 5000
+#     instances: 1
+#     autoDeploy: true
+#     pythonVersion: 
+services:
+  - type: web
+    name: endo-detect-backend
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT
+    plan: free
+    region: oregon
+
+# services:
+#   - type: web
+#     name: endo-detect-backend
+#     env: python
+#     buildCommand: ""
+#     startCommand: python app.py
+#     envVars:
+#       - key: PORT
+#         value: 5000
+#     plan: free
+#     region: oregon

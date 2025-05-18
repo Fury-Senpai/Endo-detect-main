@@ -1,0 +1,59 @@
+
+.creator_section {
+  background-image: url('../images/creator-bg.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.creator-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#creator{
+  padding: 0;
+}
+
+.container{
+  padding: 0;
+}
+.creator-text {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.creator-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+
+@media (max-width: 768px) {
+  .creator-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .creator-text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .creator-title {
+    font-size: 1.7rem;
+  }
+
+  .creator-text {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .creator-img {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
